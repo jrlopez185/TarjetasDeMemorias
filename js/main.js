@@ -1,7 +1,5 @@
-let frutas = ["🍇", "🍈", "🍉", "🍊", "🍋", "🍌", "🍍", "🥭", "🍎"];
-let frutas2 = ["🍇", "🍈", "🍉", "🍊", "🍋", "🍌", "🍍", "🥭", "🍎"];
+let frutas = ["🍇", "🍈", "🍉", "🍊", "🍋", "🍌", "🍍", "🥭", "🍎", "🍇", "🍈", "🍉", "🍊", "🍋", "🍌", "🍍", "🥭", "🍎"];
 
-let todo = frutas.concat(frutas2);
 
 let root = document.querySelector("#root");
 
@@ -9,7 +7,7 @@ let root = document.querySelector("#root");
 
 function agregar_al_DOM(){
 
-    todo.forEach(function (elemento, indice){
+    frutas.forEach(function (elemento, indice){
 
         let contenedor = document.createElement("div");
 
@@ -24,11 +22,15 @@ function agregar_al_DOM(){
         });
 
     //ford
-
-
+  
 }
 
+frutas.sort(function(){return 0.5  - Math.random()});
+
 agregar_al_DOM();
+
+
+
 
 
 
